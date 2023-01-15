@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+color:#fff;
+background-color: #000;
+font-family: sans-serif;
+background-size: cover;
+ }
+
+header{
+     
+}
+
+.hero-section  {
+    text-align: center;
+    background:url(./image\ 2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+}
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+}
+.hero-content h1{
+    font-size:60px;
+    line-height: 70px;
+    font-weight: 600px;
+    max-width: 650px;
+}
+.hero-content h3{
+  font-weight: 400;
+  margin-bottom: 20px;  
+}
+.signup{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+
+}
+.signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+.signup button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+.section-container2{
+    padding: 50px 12px;
+    font-size: 22px;
+border-top: 8px solid #222;
+}
+.content-container{
+    display: flex;
+    align-items: center;
+     flex-wrap: wrap;
+     padding: 40px 0;
+
+}
+.text-content{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-container2{
+    flex-basis: 50%;
+    margin-bottom: 20px;   
+}
+.img-container2 img{
+display: block;
+width: 90%;
+margin: auto;
+}
+.section-container2 h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom:20px ;
+}
+
+
+
+.faq{
+    padding: 10px 12px;
+    text-align: center;
+    font-size: 18px;
+
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 26px;
+    font-weight: 500;
+    background-color:#303030 ;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+     font-size: 34px;
+     position: absolute;
+     right: 20px;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background: #333 ;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"] :checked + label + .content{
+max-height: 600px;
+padding: 30px 20px;
+
+
+}
+
+.accordion input[type="radio"] :checked + label ::after{
+    transform: rotate(135deg);
+}
+
+.faq .signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+
+
+}
+.faq small{
+font-size: 13px;
+}
+/*********FOOTER********/
+
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+
+
+}
+
+.footer h2 {
+    font-size: 18px;
+font-weight: 400;
+margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis:25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a{
+display: block;
+text-decoration: none;
+color: #777;
+font-size: 14px;
+margin-bottom: 10px;
+}
+
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.copyright-text{
+    font-size:14PX ;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+/*---------MEDIA QUERY FOR SMALL SCREEN-------*/
+@media only screen and (max-width:600px){
+    .logo{
+        width: 100px;
+    }
+.hero-content{
+    position: unset;
+    transform: none;
+    padding-top: 150px;
+}
+.hero-content h1{
+    font-size: 30px;
+
+}
+.signup button{
+    font-size: 12px;
+    padding: 10px 15px;
+}
+.text-col, .img.col{
+    flex-basis: 100%;
+}
+.content-container h2{
+    font-size: 30px;
+}
+.content-container p{
+    font-size: 30px;
+}
+.row:nth-child(2), .row:nth-child(4){
+    flex-direction: column-reverse;
+}.content-container .row{
+    padding: 10px 0;
+}
+.faq h2{
+    font-size: 20px;
+}
+.accordion .content{
+    font-size: 14px;
+    
+}
+.accordion li label{
+    padding: 10px;
+    font-size: 14px;
+    
+}
+label::after{
+    font-size: 22px;
+}
+}
